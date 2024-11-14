@@ -4,26 +4,30 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import img1 from '../assets/img/doc1.png';
+import img2 from '../assets/img/doc2.png';
+import img3 from '../assets/img/doc3.png';
+import img4 from '../assets/img/doc4.png';
 
 const Doctors = () => {
   const data = [
     {
-      img: "/src/assets/img/doc1.png",
+      img: img1,
       name: "Dr. Anjana Ravindran",
       specialties: "Oral Maxillofacial Prosthodontist, Implantologist, Smile Designer, Cosmetic Dentist",
     },
     {
-      img: "/src/assets/img/doc2.png",
+      img: img2,
       name: "Dr Vinod Nair",
       specialties: "Oral Maxillofacial Surgeon & Implantologist",
     },
     {
-      img: "/src/assets/img/doc3.png",
+      img: img3,
       name: "Dr. Greeshma Yukthi",
       specialties: "Periodontist, Implantologist and Esthetic Dentistry",
     },
     {
-      img: "/src/assets/img/doc4.png",
+      img: img4,
       name: "Dr Sooraj Swaraj",
       specialties: "Dental Surgeon, Smile Designer, Cosmetologist",
     },
