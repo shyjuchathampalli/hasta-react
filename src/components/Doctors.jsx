@@ -8,34 +8,24 @@ import { FaArrowRight } from "react-icons/fa";
 const Doctors = () => {
   const data = [
     {
-      img: "/src/assets/img/doc1.jpg",
-      name: "Dr. Serena Mitchell",
-      specialties: "Orthopedic Surgeon",
+      img: "/src/assets/img/doc1.png",
+      name: "Dr. Anjana Ravindran",
+      specialties: "Oral Maxillofacial Prosthodontist, Implantologist, Smile Designer, Cosmetic Dentist",
     },
     {
-      img: "/src/assets/img/doc2.jpg",
-      name: "Dr. Julian Bennett",
-      specialties: "Cardiologist",
+      img: "/src/assets/img/doc2.png",
+      name: "Dr Vinod Nair",
+      specialties: "Oral Maxillofacial Surgeon & Implantologist",
     },
     {
-      img: "/src/assets/img/doc3.jpg",
-      name: "Dr. Camila Rodriguez",
-      specialties: "Pediatrician",
+      img: "/src/assets/img/doc3.png",
+      name: "Dr. Greeshma Yukthi",
+      specialties: "Periodontist, Implantologist and Esthetic Dentistry",
     },
     {
-      img: "/src/assets/img/doc4.jpg",
-      name: "Dr. Victor Nguyen",
-      specialties: "Neurologist",
-    },
-    {
-      img: "/src/assets/img/doc5.jpg",
-      name: "Dr. Ethan Carter",
-      specialties: "Dermatologist",
-    },
-    {
-      img: "/src/assets/img/doc6.jpg",
-      name: "Dr. Olivia Martinez",
-      specialties: "Ophthalmologist",
+      img: "/src/assets/img/doc4.png",
+      name: "Dr Sooraj Swaraj",
+      specialties: "Dental Surgeon, Smile Designer, Cosmetologist",
     },
   ];
 
@@ -47,8 +37,8 @@ const Doctors = () => {
     infinite: true,
     speed: 500,
     arrows: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 0,
     responsive: [
       {
         breakpoint: 1023,
@@ -86,8 +76,7 @@ const Doctors = () => {
             Our Doctors
           </h1>
           <p className=" mt-2 text-center lg:text-start">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
-            quidem.
+          Meet our team of dedicated specialists, ensuring your best smile and healthiest skin with personalised care.
           </p>
         </div>
         <div className="flex gap-5 mt-4 lg:mt-0">
@@ -109,20 +98,20 @@ const Doctors = () => {
         <Slider ref={slider} {...settings}>
           {data.map((e, index) => (
             <div
-              className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
+              className="h-[500px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
               key={index}
             >
               <div>
                 <img
                   src={e.img}
                   alt="img"
-                  className=" h-56 rounded-t-xl w-full"
+                  className="rounded-t-xl w-full"
                 />
               </div>
 
               <div className=" flex flex-col justify-center items-center">
-                <h1 className=" font-semibold text-xl pt-4">{e.name}</h1>
-                <h3 className=" pt-2">{e.specialties}</h3>
+                <h1 className=" font-semibold text-xl text-center pt-4">{e.name}</h1>
+                <h3 className=" pt-2 text-center px-4">{e.specialties}</h3>
               </div>
             </div>
           ))}

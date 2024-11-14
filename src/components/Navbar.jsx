@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import Button from "../layouts/Button";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Contact from "../models/Contact";
+import img from "../assets/img/Hasta-Logo.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -31,7 +32,7 @@ const Navbar = () => {
         <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-backgroundColor shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className=" flex flex-row items-center cursor-pointer">
             <Link to="home" spy={true} smooth={true} duration={500}>
-              <h1 className=" text-2xl font-semibold">WellnessVista.</h1>
+            <img className="w-[180px] h-[63px] rounded-lg" src={img} alt="img" />
             </Link>
           </div>
 
@@ -72,23 +73,14 @@ const Navbar = () => {
             >
               Doctors
             </Link>
-            <Link
-              to="blog"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Blog
-            </Link>
           </nav>
 
           <div className=" hidden lg:flex">
             <button
-              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              className="bg-brightColor text-[#25454c] text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
               onClick={openForm}
             >
-              Contact Us
+               Book an Appointment
             </button>
           </div>
 
@@ -147,23 +139,13 @@ const Navbar = () => {
           >
             Doctors
           </Link>
-          <Link
-            to="blog"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
-            onClick={closeMenu}
-          >
-            Blog
-          </Link>
 
           <div className=" lg:hidden">
             <button
               className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
               onClick={openForm}
             >
-              Contact Us
+              Book an Appointment
             </button>
           </div>
         </div>
