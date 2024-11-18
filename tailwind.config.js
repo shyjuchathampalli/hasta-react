@@ -6,7 +6,7 @@ export default {
       colors: {
         hoverColor: "#FFC000",
         brightColor: "#e9bc8b",
-        backgroundColor: "#25454c",
+        backgroundColor: "#48717a",
       },
     },
   },

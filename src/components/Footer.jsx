@@ -7,7 +7,9 @@ const Footer = () => {
     <div className=" bg-backgroundColor text-white rounded-t-3xl mt-8 md:mt-0">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
-        <img className="w-[180px] h-[63px] rounded-lg" src={img} alt="img" />
+        <div className="p-[10px] bg-white rounded-lg shadow-sm inline-block">
+          <img className="w-[180px] h-[63px] rounded-lg" src={img} alt="img" />
+        </div>
           <p className=" text-sm mt-4">
           Personalised care & treatment packages from experienced cosmetic surgeons.
           </p>

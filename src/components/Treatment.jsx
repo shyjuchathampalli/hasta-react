@@ -4,7 +4,7 @@ import Packages from './blocks/Packages';
 function Treatment() {
   return (
     <div>
-      <section className="text-gray-600 body-font overflow-hidden">
+      <section className="text-gray-600 body-font overflow-hidden lg:px-32 px-5">
         <div className="container px-5 mx-auto">
           <div className="flex flex-wrap -m-12">
             <Packages

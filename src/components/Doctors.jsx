@@ -8,6 +8,7 @@ import img1 from '../assets/img/doc1.png';
 import img2 from '../assets/img/doc2.png';
 import img3 from '../assets/img/doc3.png';
 import img4 from '../assets/img/doc4.png';
+import img5 from '../assets/img/doc5.png';
 
 const Doctors = () => {
   const data = [
@@ -31,6 +32,11 @@ const Doctors = () => {
       name: "Dr Sooraj Swaraj",
       specialties: "Dental Surgeon, Smile Designer, Cosmetologist",
     },
+    {
+      img: img5,
+      name: "Dr Archa M Nair",
+      specialties: "MBBS , PgDipPH [Public Health], PGDCC (Clinical Cosmetology)",
+    },
   ];
 
   const slider = useRef(null);
@@ -42,7 +48,7 @@ const Doctors = () => {
     speed: 500,
     arrows: false,
     slidesToShow: 4,
-    slidesToScroll: 0,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1023,
